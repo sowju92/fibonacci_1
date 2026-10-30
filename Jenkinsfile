@@ -1,7 +1,8 @@
 pipeline {
-    agent any
-
-    stages {
+    agent { 
+        label 'label1'
+    }
+stages {
         stage('Checkout') {
             steps {
                 echo 'Checking out PR code'
